@@ -21,18 +21,14 @@ IMPORTANT
 
 SETUP (Windows)
 1. Install Python 3.11+ from python.org.
-2. Open PowerShell in this folder.
-3. Create a virtual environment:
-   python -m venv .venv
-4. Activate:
-   .venv\Scripts\Activate.ps1
-5. Install dependencies:
-   pip install -r requirements.txt
-6. Copy .env.example to .env and put your OpenAI API key in it.
-7. Start:
-   uvicorn app:app --reload
-8. Open:
-   http://127.0.0.1:8000
+2. Generate and paste Google api key (Free will work)
+3. Paste it in the .env file(No additions punctuation or Bracket needed.)
+4. Activate by clicking start.bat file in the folder.
+5. Open http://127.0.0.1:8000 (In any browser)
+6. you will see the Career_Market_Intelligence page got live.
+7. paste any job posting link there then click analyse job.
+8. you will see the json finding in the html page then click confirm & add to master.
+9. It will be added in the xml/xlsx file in the folder.
 
 PILOT
 The five test URLs are in test_urls.txt.
@@ -67,6 +63,7 @@ DYNAMIC SKILL DISCOVERY (added)
 - Rows you approved before a skill was promoted will show blank/Unknown for
   that new column — promotion doesn't retroactively re-analyze old postings.
 
-SECURITY
-Never put an API key inside frontend JavaScript or inside the Excel file.
-Keep .env local and never commit it to Git.
+#Additional guidance
+Clone full repo and put it in downloads(if not there) then generate a google api key from google ai studio https://aistudio.google.com/api-keys
+then paste it in .env (don't change any thing their , just paste raw api key ).
+Now click the start bat it will show security warming dialogbox, then click run any then open the 
